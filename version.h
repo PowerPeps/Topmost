@@ -1,0 +1,10 @@
+#ifndef TOPMOST_VERSION_H
+#define TOPMOST_VERSION_H
+
+#define TOPMOST_VER_MAJOR  1
+#define TOPMOST_VER_MINOR  0
+#define TOPMOST_VER_PATCH  0
+#define TOPMOST_VER_BUILD  0
+#define TOPMOST_VER_STRING "1.0.0.0"
+
+#endif

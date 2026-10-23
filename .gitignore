@@ -1,0 +1,12 @@
+Topmost.exe
+Topmost32.exe
+Topmost.arm64.exe
+TopmostHook64.dll
+TopmostHook32.dll
+TopmostHookArm64.dll
+*.obj
+*.exp
+*.lib
+*.res
+Setup.exe
+obj/

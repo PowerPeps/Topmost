@@ -1,0 +1,36 @@
+#include <winver.h>
+#include <winuser.h>
+#include "resource.h"
+#include "version.h"
+
+IDI_APP ICON "Topmost.ico"
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "Topmost.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    TOPMOST_VER_MAJOR, TOPMOST_VER_MINOR, TOPMOST_VER_PATCH, TOPMOST_VER_BUILD
+ PRODUCTVERSION TOPMOST_VER_MAJOR, TOPMOST_VER_MINOR, TOPMOST_VER_PATCH, TOPMOST_VER_BUILD
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      0x0L
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_APP
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Topmost"
+            VALUE "FileDescription",  "Topmost - Always on top in the window menu"
+            VALUE "FileVersion",      TOPMOST_VER_STRING
+            VALUE "InternalName",     "Topmost"
+            VALUE "LegalCopyright",   "MIT License"
+            VALUE "ProductName",      "Topmost"
+            VALUE "ProductVersion",   TOPMOST_VER_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
